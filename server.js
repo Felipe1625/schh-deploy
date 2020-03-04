@@ -42,7 +42,7 @@ class Server {
     }
     start() {
         app.route('/*', function(req,res) {
-            res.redirect(__dirname + '/client/src/index.html')
+            res.redirect(__dirname + '/dist/index.html')
           })
 
         
