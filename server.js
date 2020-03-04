@@ -41,23 +41,9 @@ class Server {
         this.app.use('/api/tiempo', TiempoRoutes_1.default);
     }
     start() {
-        const express = require('express');
-const http = require('http')
-const path = require('path');
-
-const app = express();
-
-app.use(express.static(path.join(__dirname, 'client')));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/client/index.html'));
-});
-
-const port = process.env.PORT || 3000;
-app.set('port', port);
-
-const server = http.createServer(app);
-server.listen(port, () => console.log('running'));
+        app.route('/*', function(req,res) {
+            res.redirect(__dirname + '/client/src/index.html')
+          })
 
         
     }
