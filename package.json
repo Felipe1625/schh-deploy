@@ -22,7 +22,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@angular/cli": "6.0.7",
+    "@angular/cli": "6.0.0-rc.3",
+    "@angular/compiler-cli": "^5.2.0",
     "@types/jsonwebtoken": "^8.3.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -32,7 +33,6 @@
     "@angular/animations": "5.1.0",
     "@angular/common": "5.0.3",
     "@angular/compiler": "5.0.3",
-    "@angular/compiler-cli": "5.0.3",
     "@angular/core": "5.0.3",
     "@angular/forms": "5.0.3",
     "@angular/http": "5.0.3",
