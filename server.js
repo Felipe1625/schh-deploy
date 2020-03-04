@@ -58,7 +58,7 @@ class Server {
     app.use(express.static(path.join("dist")));
 
     app.get("*", (req, res) => {
-      res.sendFile(path.join("/dist/index.html"));
+      res.sendFile(path.join("dist/index.html"));
     });
 
     const port = process.env.PORT || 3000;
